@@ -1,0 +1,354 @@
+/* =========================================
+   CareerNest - Home Page
+========================================= */
+
+.home {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hero Section */
+
+.hero-section {
+  max-width: 1200px;
+  min-height: calc(100vh - 72px);
+  margin: 0 auto;
+  padding: 80px 24px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Hero Content */
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 13px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.hero-content h1 {
+  margin-bottom: 24px;
+
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.hero-content h1 span {
+  color: #2563eb;
+}
+
+.hero-description {
+  max-width: 580px;
+  margin-bottom: 34px;
+
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 45px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 24px;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+.primary-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.secondary-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Trust Statistics */
+
+.hero-trust {
+  display: flex;
+  gap: 45px;
+}
+
+.hero-trust div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-trust strong {
+  font-size: 24px;
+  color: #111827;
+}
+
+.hero-trust span {
+  margin-top: 2px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Hero Visual */
+
+.hero-visual {
+  min-height: 500px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eff6ff;
+  border-radius: 30px;
+}
+
+/* Main Career Card */
+
+.main-card {
+  width: 340px;
+  padding: 30px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.12);
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  background: #eff6ff;
+  border-radius: 12px;
+
+  font-size: 25px;
+}
+
+.main-card h3 {
+  margin-bottom: 8px;
+
+  color: #111827;
+  font-size: 21px;
+}
+
+.main-card > p {
+  margin-bottom: 22px;
+
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Job Mini Cards */
+
+.mini-job {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 13px;
+  margin-top: 10px;
+
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 10px;
+}
+
+.job-logo {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+}
+
+.mini-job div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-job strong {
+  color: #111827;
+  font-size: 13px;
+}
+
+.mini-job span {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+/* Floating Cards */
+
+.floating-card {
+  position: absolute;
+
+  top: 75px;
+  right: 15px;
+
+  min-width: 150px;
+  padding: 15px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-card span {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.floating-card strong {
+  margin-top: 3px;
+
+  color: #2563eb;
+  font-size: 25px;
+}
+
+.floating-card small {
+  color: #16a34a;
+  font-size: 10px;
+}
+
+.floating-card.second {
+  top: auto;
+  right: auto;
+
+  bottom: 70px;
+  left: 15px;
+}
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+@media (max-width: 950px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-top: 60px;
+  }
+
+  .hero-content {
+    max-width: 750px;
+  }
+
+  .hero-visual {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 45px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 25px;
+  }
+
+  .hero-trust strong {
+    font-size: 20px;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+  }
+
+  .main-card {
+    width: 285px;
+    padding: 22px;
+  }
+
+  .floating-card {
+    right: 5px;
+    top: 45px;
+  }
+
+  .floating-card.second {
+    left: 5px;
+    bottom: 45px;
+  }
+}

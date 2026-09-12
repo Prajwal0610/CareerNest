@@ -1,0 +1,790 @@
+/* =========================================
+   CAREERNEST - SKILL ANALYZER
+   Clean replacement CSS
+========================================= */
+
+.skill-analyzer-page {
+  min-height: 100vh;
+  padding: 64px 4%;
+  background: #f8fafc;
+  color: #111827;
+  box-sizing: border-box;
+}
+
+.skill-analyzer-page *,
+.skill-analyzer-page *::before,
+.skill-analyzer-page *::after {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.skill-analyzer-header {
+  max-width: 1100px;
+  margin: 0 auto 42px;
+}
+
+.section-tag {
+  margin: 0 0 16px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.skill-analyzer-header h1 {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.skill-analyzer-header h1 span {
+  color: #2563eb;
+}
+
+.skill-analyzer-header > p:last-child {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: #60758d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* INPUT */
+
+.skill-input-card {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #dce5ef;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.skill-input-heading h2,
+.skill-result-header h2,
+.skill-score-card h2,
+.career-paths-header h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.skill-input-heading h2 {
+  font-size: 23px;
+}
+
+.skill-input-heading p,
+.skill-result-header p,
+.career-paths-header p {
+  margin: 7px 0 0;
+  color: #60758d;
+  font-size: 13px;
+}
+
+/* CAREER SELECT */
+
+.career-role-selector {
+  margin: 24px 0;
+}
+
+.career-role-selector label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.career-role-selector select {
+  width: 420px;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #111827;
+  font: 600 14px inherit;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.career-role-selector select:hover,
+.career-role-selector select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+}
+
+.career-role-selector p {
+  margin: 7px 0 0;
+  color: #60758d;
+  font-size: 12px;
+}
+
+/* TEXTAREA */
+
+.skill-input-card textarea {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: 15px;
+  border: 1px solid #d5e0ed;
+  border-radius: 10px;
+  outline: none;
+  resize: vertical;
+  background: #fff;
+  color: #172033;
+  font: 14px/1.6 inherit;
+  transition: .2s ease;
+}
+
+.skill-input-card textarea::placeholder {
+  color: #9aabc0;
+}
+
+.skill-input-card textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+}
+
+/* BUTTONS */
+
+.skill-input-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.analyze-skills-btn,
+.clear-skills-btn,
+.career-path-btn,
+.skills-to-learn button,
+.recommended-skills button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.analyze-skills-btn {
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.analyze-skills-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .18);
+}
+
+.analyze-skills-btn:disabled {
+  background: #93b4f3;
+  cursor: not-allowed;
+}
+
+.clear-skills-btn {
+  padding: 12px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.clear-skills-btn:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.analysis-message {
+  margin: 12px 0 0;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* RESULTS */
+
+.skill-results {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+  scroll-margin-top: 25px;
+}
+
+.career-role-card,
+.career-paths-card,
+.skill-score-card,
+.skill-result-card {
+  background: #fff;
+  border: 1px solid #dce5ef;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .04);
+}
+
+/* CAREER MATCH */
+
+.career-role-card {
+  padding: 30px 32px;
+  scroll-margin-top: 25px;
+}
+
+.career-role-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.career-role-label {
+  margin: 0 0 6px;
+  color: #60758d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.career-role-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 25px;
+}
+
+.career-role-header p:last-child {
+  margin: 7px 0 0;
+  color: #60758d;
+  font-size: 13px;
+}
+
+.career-match-score {
+  width: 92px;
+  height: 92px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #dbeafe;
+  border-radius: 50%;
+  background: #eff6ff;
+}
+
+.career-match-score span {
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.career-match-score small {
+  margin-top: 5px;
+  color: #334155;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.career-match-progress,
+.career-path-progress {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e5e7eb;
+}
+
+.career-match-progress {
+  height: 8px;
+  margin-top: 24px;
+}
+
+.career-match-progress-bar,
+.career-path-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #2563eb;
+  transition: width .5s ease;
+}
+
+.career-skill-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.career-skill-box {
+  padding: 18px;
+  border: 1px solid #dce5ef;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.career-skill-box h3 {
+  margin: 0 0 14px;
+  color: #111827;
+  font-size: 14px;
+}
+
+.career-skill-box p {
+  margin: 0;
+  color: #60758d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.strong-skills,
+.skills-to-learn,
+.recommended-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.strong-skills span {
+  padding: 8px 11px;
+  border: 1px solid #86efac;
+  border-radius: 7px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.skills-to-learn button {
+  padding: 8px 11px;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.skills-to-learn button:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* CAREER PATHS */
+
+.career-paths-card {
+  padding: 30px 32px;
+}
+
+.career-paths-header {
+  margin-bottom: 20px;
+}
+
+.career-path-list {
+  display: grid;
+  gap: 10px;
+}
+
+.career-path-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid #dce5ef;
+  border-radius: 12px;
+  background: #f8fafc;
+  transition: .2s ease;
+}
+
+.career-path-item:hover,
+.career-path-item.active-career {
+  border-color: #bfd3f7;
+  background: #f4f8ff;
+  box-shadow: 0 5px 15px rgba(15, 23, 42, .04);
+}
+
+.career-path-rank {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.career-path-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.career-path-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.career-path-title strong {
+  color: #172033;
+  font-size: 14px;
+}
+
+.career-path-title span {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.career-path-progress {
+  height: 6px;
+}
+
+.career-path-info small {
+  display: block;
+  margin-top: 6px;
+  color: #60758d;
+  font-size: 11px;
+}
+
+.career-path-btn {
+  flex: 0 0 auto;
+  padding: 8px 13px;
+  border: 1px solid #bfd3f7;
+  border-radius: 7px;
+  background: #fff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.career-path-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+/* SCORE */
+
+.skill-score-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 28px 32px;
+}
+
+.skill-score-circle {
+  width: 105px;
+  height: 105px;
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: conic-gradient(
+    #2563eb 0deg,
+    #2563eb calc(var(--score, 0) * 3.6deg),
+    #e5e7eb calc(var(--score, 0) * 3.6deg),
+    #e5e7eb 360deg
+  );
+}
+
+.skill-score-circle::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.skill-score-circle span {
+  position: relative;
+  z-index: 2;
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.skill-score-card h2 {
+  font-size: 22px;
+}
+
+.skill-score-card p {
+  margin: 0;
+  color: #60758d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.skill-score-card small {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* SKILLS */
+
+.skill-result-card {
+  padding: 30px 32px;
+}
+
+.skill-result-header {
+  margin-bottom: 22px;
+}
+
+.skill-result-header h2 {
+  font-size: 21px;
+}
+
+.analyzed-skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.analyzed-skill {
+  padding: 15px;
+  border: 1px solid #e0e8f1;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: .2s ease;
+}
+
+.analyzed-skill:hover {
+  border-color: #bfd3f7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(15, 23, 42, .04);
+}
+
+.skill-name {
+  margin-bottom: 7px;
+  color: #172033;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.analyzed-skill span {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.unknown-skill {
+  border-color: #fde68a;
+  background: #fffbeb;
+}
+
+.unknown-skill span {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* RECOMMENDED */
+
+.recommended-skills button {
+  padding: 9px 13px;
+  border: 1px solid #cbdcff;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.recommended-skills button:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.all-skills-message {
+  padding: 15px;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* CAREER TIP */
+
+.career-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 24px 28px;
+  border: 1px solid #cbdcff;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eff6ff, #fff);
+}
+
+.career-tip-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, .08);
+}
+
+.career-tip h3 {
+  margin: 0 0 5px;
+  color: #172033;
+  font-size: 16px;
+}
+
+.career-tip p {
+  margin: 0;
+  color: #60758d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* EMPTY */
+
+.skill-empty-state {
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 55px 35px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dce5ef;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .04);
+}
+
+.skill-empty-icon {
+  margin-bottom: 15px;
+  font-size: 42px;
+}
+
+.skill-empty-state h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 22px;
+}
+
+.skill-empty-state p {
+  max-width: 500px;
+  margin: 10px auto 0;
+  color: #60758d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .skill-analyzer-page {
+    padding: 55px 25px;
+  }
+
+  .analyzed-skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .skill-analyzer-page {
+    padding: 40px 18px;
+  }
+
+  .skill-input-card,
+  .career-role-card,
+  .career-paths-card,
+  .skill-score-card,
+  .skill-result-card {
+    padding: 24px;
+  }
+
+  .career-role-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .career-skill-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .career-path-item {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .career-path-info {
+    width: calc(100% - 50px);
+  }
+
+  .career-path-btn {
+    margin-left: 48px;
+  }
+
+  .skill-score-card {
+    align-items: flex-start;
+  }
+
+  .analyzed-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .skill-analyzer-header h1 {
+    font-size: 34px;
+    letter-spacing: -1.2px;
+  }
+
+  .skill-input-card,
+  .career-role-card,
+  .career-paths-card,
+  .skill-score-card,
+  .skill-result-card {
+    padding: 20px;
+  }
+
+  .skill-score-card {
+    flex-direction: column;
+  }
+
+  .career-path-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .career-path-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .career-tip {
+    padding: 20px;
+  }
+}
