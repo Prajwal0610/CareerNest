@@ -102,37 +102,6 @@ Users can monitor the status of their job applications through the My Applicatio
 
 # 🏗️ System Architecture
 
-CareerNest follows a client-server architecture.
+The following architecture illustrates the overall structure of the CareerNest platform, including the frontend, backend, database, users, and major functional modules.
 
-```text
-                  ┌─────────────────────┐
-                  │       USER          │
-                  └──────────┬──────────┘
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │   React Frontend    │
-                  │                     │
-                  │  Job Search         │
-                  │  Resume Builder     │
-                  │  Skill Analyzer     │
-                  │  Interview Prep     │
-                  │  My Applications    │
-                  └──────────┬──────────┘
-                             │
-                             │ API Requests
-                             ▼
-                  ┌─────────────────────┐
-                  │   Express.js        │
-                  │     Backend         │
-                  │                     │
-                  │  Routes             │
-                  │  Server Logic       │
-                  │  Authentication     │
-                  └──────────┬──────────┘
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │    Backend Data     │
-                  │      Models         │
-                  └─────────────────────┘
+![CareerNest System Architecture](./architecture.png)
