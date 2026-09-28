@@ -1,16 +1,158 @@
-# React + Vite
+# CareerNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 📌 Project Overview
+CareerNest is a web-based career management platform...
 
-Currently, two official plugins are available:
+## 🎯 Objectives
+- Job search and exploration
+- Resume creation
+- Skill analysis
+- Interview preparation
+- Job application tracking
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+1. User Authentication
+2. Job Search
+3. Resume Builder
+4. Skill Analyzer
+5. Interview Preparation
+6. My Applications
+7. Admin Dashboard
 
-## React Compiler
+## 🛠️ Technologies Used
+### Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
+- Node.js
+- Express.js
 
-## Expanding the Oxlint configuration
+### Database
+- MongoDB
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Tools
+- Git
+- GitHub
+- VS Code
+- npm
+
+## 🏗️ System Architecture
+User → React Frontend → Express/Node.js Backend → Database
+
+## 📂 Project Structure
+
+CareerNest/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── ...
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── public/
+├── package.json
+└── README.md
+
+## ⚙️ Installation
+
+### Clone the repository
+git clone <repository-url>
+
+### Install frontend dependencies
+npm install
+
+### Start frontend
+npm run dev
+
+### Start backend
+cd backend
+npm install
+npm start
+
+## 🚀 Modules
+
+### Job Search
+Users can search and explore available job opportunities.
+
+### Resume Builder
+Users can create and manage professional resumes.
+
+### Skill Analyzer
+Analyzes user skills and helps identify areas for improvement.
+
+### Interview Preparation
+Provides interview preparation resources.
+
+### My Applications
+Allows users to track job applications and their current status.
+
+### Admin Dashboard
+Provides administrative functionality for managing jobs and applications.
+
+## 🔄 Application Flow
+
+User
+ ↓
+Login / Register
+ ↓
+CareerNest Dashboard
+ ↓
+┌───────────────┬───────────────┬───────────────┐
+│ Jobs          │ Resume Builder│ Skill Analyzer│
+└───────────────┴───────────────┴───────────────┘
+ ↓
+Interview Preparation
+ ↓
+Apply for Job
+ ↓
+My Applications
+ ↓
+Track Application Status
+
+## 📊 Application Status
+
+- Applied
+- Under Review
+- Shortlisted
+- Rejected
+- Withdrawn
+
+## 🔐 Security
+- User authentication
+- Protected routes
+- Backend API validation
+- Secure data handling
+
+## 📸 Screenshots
+
+Add screenshots of:
+- Home Page
+- Jobs Page
+- Resume Builder
+- Skill Analyzer
+- Interview Prep
+- My Applications
+- Admin Dashboard
+
+## 🔮 Future Enhancements
+
+- AI-based resume analysis
+- AI interview assistant
+- Personalized job recommendations
+- Email notifications
+- Advanced skill-gap analysis
+- LinkedIn integration
+
+## 👨‍💻 Developer
+
+CareerNest – Career Management Platform
+
+## 📄 License
+
+This project is developed for educational and project purposes.
