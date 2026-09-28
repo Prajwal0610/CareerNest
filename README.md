@@ -1,121 +1,60 @@
-# CareerNest
+# 🚀 CareerNest
+
+CareerNest is a web-based career management platform designed to help users manage their complete career journey from a single platform.
+
+The platform brings together job searching, resume building, skill analysis, interview preparation, and job application tracking to provide users with an organized and user-friendly career management experience.
+
+---
 
 ## 📌 Project Overview
-CareerNest is a web-based career management platform...
+
+CareerNest is developed as a full-stack web application that helps job seekers manage different stages of their job search process.
+
+Instead of using different platforms for searching jobs, preparing resumes, analyzing skills, preparing for interviews, and tracking applications, CareerNest provides these features in one centralized system.
+
+The application contains separate modules for users and administrators. Users can explore jobs, create resumes, analyze their skills, prepare for interviews, and track their applications. The administrator can manage application-related information through the Admin Dashboard.
+
+---
 
 ## 🎯 Objectives
-- Job search and exploration
-- Resume creation
-- Skill analysis
-- Interview preparation
-- Job application tracking
 
-## ✨ Features
-1. User Authentication
-2. Job Search
-3. Resume Builder
-4. Skill Analyzer
-5. Interview Preparation
-6. My Applications
-7. Admin Dashboard
+The main objectives of CareerNest are:
 
-## 🛠️ Technologies Used
-### Frontend
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-- Vite
+- To provide a centralized career management platform.
+- To simplify the job searching process.
+- To help users create and manage resumes.
+- To analyze users' skills and identify skill gaps.
+- To provide interview preparation resources.
+- To allow users to track their job applications.
+- To provide application status information.
+- To provide an administrative dashboard for management.
+- To create a simple and user-friendly career platform.
 
-### Backend
-- Node.js
-- Express.js
+---
 
-### Database
-- MongoDB
+## ✨ Key Features
 
-### Tools
-- Git
-- GitHub
-- VS Code
-- npm
+### 🔍 Job Search
 
-## 🏗️ System Architecture
-User → React Frontend → Express/Node.js Backend → Database
+Users can browse available job opportunities and view job-related information.
 
-## 📂 Project Structure
+### 📄 Resume Builder
 
-CareerNest/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── ...
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-├── public/
-├── package.json
-└── README.md
+Users can create and manage their professional resume through the Resume Builder module.
 
-## ⚙️ Installation
+### 📊 Skill Analyzer
 
-### Clone the repository
-git clone <repository-url>
+The Skill Analyzer helps users understand their skills and identify areas where they can improve.
 
-### Install frontend dependencies
-npm install
+### 🎤 Interview Preparation
 
-### Start frontend
-npm run dev
+CareerNest provides an Interview Preparation section to help users prepare for job interviews.
 
-### Start backend
-cd backend
-npm install
-npm start
+### 📋 My Applications
 
-## 🚀 Modules
+Users can track their submitted job applications from one place.
 
-### Job Search
-Users can search and explore available job opportunities.
-
-### Resume Builder
-Users can create and manage professional resumes.
-
-### Skill Analyzer
-Analyzes user skills and helps identify areas for improvement.
-
-### Interview Preparation
-Provides interview preparation resources.
-
-### My Applications
-Allows users to track job applications and their current status.
-
-### Admin Dashboard
-Provides administrative functionality for managing jobs and applications.
-
-## 🔄 Application Flow
-
-User
- ↓
-Login / Register
- ↓
-CareerNest Dashboard
- ↓
-┌───────────────┬───────────────┬───────────────┐
-│ Jobs          │ Resume Builder│ Skill Analyzer│
-└───────────────┴───────────────┴───────────────┘
- ↓
-Interview Preparation
- ↓
-Apply for Job
- ↓
-My Applications
- ↓
-Track Application Status
-
-## 📊 Application Status
+Application information can include different statuses such as:
 
 - Applied
 - Under Review
@@ -123,36 +62,77 @@ Track Application Status
 - Rejected
 - Withdrawn
 
-## 🔐 Security
-- User authentication
-- Protected routes
-- Backend API validation
-- Secure data handling
+### 👨‍💼 Admin Dashboard
 
-## 📸 Screenshots
+The Admin Dashboard provides administrative functionality for managing application-related information and platform data.
 
-Add screenshots of:
-- Home Page
-- Jobs Page
-- Resume Builder
-- Skill Analyzer
-- Interview Prep
-- My Applications
-- Admin Dashboard
+### 🔐 User Authentication
 
-## 🔮 Future Enhancements
+The application provides user authentication functionality for accessing user-specific features.
 
-- AI-based resume analysis
-- AI interview assistant
-- Personalized job recommendations
-- Email notifications
-- Advanced skill-gap analysis
-- LinkedIn integration
+### 📈 Application Tracking
 
-## 👨‍💻 Developer
+Users can monitor the status of their job applications through the My Applications page.
 
-CareerNest – Career Management Platform
+---
 
-## 📄 License
+# 🛠️ Technologies Used
 
-This project is developed for educational and project purposes.
+## Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- npm
+
+---
+
+# 🏗️ System Architecture
+
+CareerNest follows a client-server architecture.
+
+```text
+                  ┌─────────────────────┐
+                  │       USER          │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │   React Frontend    │
+                  │                     │
+                  │  Job Search         │
+                  │  Resume Builder     │
+                  │  Skill Analyzer     │
+                  │  Interview Prep     │
+                  │  My Applications    │
+                  └──────────┬──────────┘
+                             │
+                             │ API Requests
+                             ▼
+                  ┌─────────────────────┐
+                  │   Express.js        │
+                  │     Backend         │
+                  │                     │
+                  │  Routes             │
+                  │  Server Logic       │
+                  │  Authentication     │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │    Backend Data     │
+                  │      Models         │
+                  └─────────────────────┘
